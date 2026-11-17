@@ -204,9 +204,9 @@ Routes are found on Android emulators, where you can ask which element has keybo
 
 ```mermaid
 flowchart LR
-    M["Messy start<br/>emess.sh"] --> U["Unlock"] --> R["Reset"] --> X["Route<br/>(blind)"] --> C{"Checked<br/>option?"}
-    C -- "File transfer ✅" --> N["Next messy state /<br/>next Android version"]
-    C -- "somewhere else ❌" --> F["Fix routes.sh"] --> M
+    M["Messy start"] --> U["Unlock"] --> R["Reset"] --> X["Route"] --> C{"File<br/>transfer?"}
+    C -- "✅" --> N["Next state<br/>or version"]
+    C -- "❌" --> F["Fix<br/>routes.sh"] --> M
 ```
 
 A route for one version must also not do damage on the others: you won't know which version the broken
